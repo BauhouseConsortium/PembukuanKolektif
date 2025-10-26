@@ -40,16 +40,6 @@ export function Header() {
               Install
             </Link>
             <Link
-              href="/about"
-              className={`border-b-2 text-sm ${
-                isActive("/about")
-                  ? "border-primary bg-primary px-2 py-1 text-primary-foreground"
-                  : "border-transparent text-secondary-foreground hover:border-secondary-foreground"
-              }`}
-            >
-              About
-            </Link>
-            <Link
               href="/tutorials"
               className={`border-b-2 text-sm ${
                 isActive("/tutorials") || pathname?.startsWith("/tutorials/")
@@ -60,10 +50,14 @@ export function Header() {
               Tutorials
             </Link>
             <Link
-              href="https://github.com"
-              className="border-b-2 border-transparent text-sm text-secondary-foreground hover:border-secondary-foreground"
+              href="/about"
+              className={`border-b-2 text-sm ${
+                isActive("/about")
+                  ? "border-primary bg-primary px-2 py-1 text-primary-foreground"
+                  : "border-transparent text-secondary-foreground hover:border-secondary-foreground"
+              }`}
             >
-              GitHub
+              About
             </Link>
           </nav>
         </div>
@@ -113,15 +107,6 @@ export function Header() {
               Install
             </Link>
             <Link
-              href="/about"
-              className={`border-b-2 border-foreground py-3 text-sm ${
-                isActive("/about") ? "font-bold text-primary" : "text-secondary-foreground"
-              }`}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              About
-            </Link>
-            <Link
               href="/tutorials"
               className={`border-b-2 border-foreground py-3 text-sm ${
                 isActive("/tutorials") || pathname?.startsWith("/tutorials/") ? "font-bold text-primary" : "text-secondary-foreground"
@@ -131,11 +116,13 @@ export function Header() {
               Tutorials
             </Link>
             <Link
-              href="https://github.com"
-              className="mt-2 border-2 border-primary bg-primary px-4 py-3 text-center text-sm text-primary-foreground"
+              href="/about"
+              className={`py-3 text-sm ${
+                isActive("/about") ? "font-bold text-primary" : "text-secondary-foreground"
+              }`}
               onClick={() => setMobileMenuOpen(false)}
             >
-              GitHub
+              About
             </Link>
           </nav>
         </div>
