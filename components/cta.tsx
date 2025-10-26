@@ -8,7 +8,7 @@ export function CTA() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-0 lg:grid-cols-2">
           {/* Left side - Coral red background */}
-          <div className="border-4 border-foreground bg-primary p-12 sm:p-16">
+          <div className="flex items-center border-4 border-foreground bg-primary p-12 sm:p-16">
             <h2 className="font-mono text-4xl font-black uppercase leading-none tracking-tight text-primary-foreground sm:text-6xl lg:text-7xl">
               Berani
               <br />
@@ -19,7 +19,7 @@ export function CTA() {
           {/* Right side - Yellow background */}
           <div className="border-4 border-l-0 border-foreground bg-accent p-12 sm:p-16 lg:border-l-4">
             <p className="font-mono text-xl font-bold leading-tight text-accent-foreground sm:text-2xl">
-              Pelajari cara setup dan mulai accounting transparan untuk kolektif kamu.
+              Terapkan sistem keuangan transparan untuk kerja-kerja kebudayaan yang berkelanjutan. Dari fee hingga funding, semua dikelola dengan sehat dan adil.
             </p>
             <div className="mt-8">
               <Button

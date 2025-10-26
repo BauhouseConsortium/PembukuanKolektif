@@ -21,10 +21,25 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body className={`${spaceGrotesk.variable} ${spaceMono.variable} font-sans antialiased`}>
-        <div className="sticky top-0 z-50 border-b-4 border-foreground bg-accent px-4 py-2 text-center">
-          <p className="font-mono text-sm font-bold uppercase tracking-wide text-foreground sm:text-base">
-            🚧 Dalam Pengembangan / Under Construction 🚧
-          </p>
+        <div className="sticky top-0 z-50 border-b-4 border-foreground bg-accent">
+          <div className="container mx-auto flex items-center justify-between gap-4 px-4 py-3 sm:justify-center">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <span className="text-lg sm:text-xl">🚧</span>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                <span className="font-mono text-xs font-bold uppercase tracking-wider text-foreground sm:text-sm">
+                  Dalam Pengembangan
+                </span>
+                <span className="hidden font-mono text-xs font-bold text-foreground/60 sm:inline">•</span>
+                <span className="font-mono text-xs uppercase tracking-wide text-foreground/80 sm:text-sm">
+                  Under Construction
+                </span>
+              </div>
+              <span className="text-lg sm:text-xl">🚧</span>
+            </div>
+            <div className="flex items-center gap-2 sm:hidden">
+              <div className="h-2 w-2 animate-pulse rounded-full bg-primary"></div>
+            </div>
+          </div>
         </div>
         {children}
         <Analytics />
